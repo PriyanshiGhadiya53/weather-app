@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI",sans-serif;
+    background: linear-gradient(
+        180deg,
+        #3a3f6d 0%,
+        #414a7a 40%,
+        #4b5589 70%,
+        #5a6396 100%
+    );
+    color: #ffffff;
+}
+.container{
+
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    padding: 3rem 0 3rem 0;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container h1{
+     font-size: 3rem;
+     padding: 3rem 0 3rem 0;
+}
+.container i{
+    font-size: 2.5rem;
+    color: #d6dbff;
+        padding: 3rem 0 3rem 0;
+}
+.box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+.box i{
+    font-size: 2.5rem;
+    
+    border: none;
+}
+.box #search-btn{
+  margin-left: 0.5rem;
+    border-radius: 1rem;
+        line-height: 2rem;
+          padding-top:0.5rem  0 0.5rem 0;
+
+
+}
+
+ .box #input{
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color: black;
+    font-weight: bold;
+    padding: 0.9rem;
+    width: 50%;
+}
+.temp{
+    padding-top: 7rem;
+    padding:7rem 0 3rem 40rem;
+    /*padding:7rem 0 3rem 10rem;*/
+   
+}
+.temp img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10rem;
+    object-fit: cover;
+    border: 2px solid #ccc;   /* optional, outlines image */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.temp .temp-show{
+     font-size: 2rem;   
+     
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:16px;
+    padding: 16px;
+    /*justify-content: center;*/
+    box-sizing: border-box;
+}
+.label{
+    font-size: 1.7rem;
+    opacity: 0.7;
+}
+.value{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.card .hum,.wind,.vis,.Pressure{
+    padding: 25px 11px 25px 11px;
+    margin: 1.7rem;
+     border: 2px solid rgb(65, 4, 4);
+     border-radius:20px ;
+     text-align: center;
+     background-color: rgba(255,255,255,0.08);
+     backdrop-filter: blur(30rem);
+}
+
+
+.card .wind i{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #d6dbff;
+}
+.card .vis i{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #d6dbff;
+}
+
+.card .hum i{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #d6dbff;
+}
+.card .Pressure i{
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #d6dbff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(44, 43, 43);
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 20px;
+    background-color: #111111e6;
+    color: #fff;
+    font-size:1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+footer a{
+    color: #00ff9c;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
