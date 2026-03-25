@@ -51,8 +51,6 @@ body{
     border-radius: 1rem;
         line-height: 2rem;
           padding-top:0.5rem  0 0.5rem 0;
-
-
 }
 
  .box #input{
@@ -64,10 +62,9 @@ body{
     width: 50%;
 }
 .temp{
-    padding-top: 7rem;
-    padding:7rem 0 3rem 40rem;
-    /*padding:7rem 0 3rem 10rem;*/
-   
+    padding: 3rem 0;
+    text-align: center;
+} 
 }
 .temp img{
     width: 200px;
@@ -106,8 +103,6 @@ body{
      background-color: rgba(255,255,255,0.08);
      backdrop-filter: blur(30rem);
 }
-
-
 .card .wind i{
     font-size: 2rem;
     margin-bottom: 1.6rem;
@@ -118,7 +113,6 @@ body{
     margin-bottom: 1.6rem;
     color: #d6dbff;
 }
-
 .card .hum i{
     font-size: 2rem;
     margin-bottom: 1.6rem;
@@ -129,38 +123,6 @@ body{
     margin-bottom: 1.6rem;
     color: #d6dbff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     background-color: rgb(44, 43, 43);
     color:#fff;
@@ -182,4 +144,67 @@ footer a{
 
 footer a:hover{
     text-decoration: underline;
+}
+/* 📱 Mobile Devices */
+@media (max-width: 768px){
+
+    .container h1{
+        font-size: 2rem;
+    }
+
+    .box{
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .box #input{
+        width: 90%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .box #search-btn{
+        width: 50%;
+        padding: 0.5rem;
+    }
+
+    .temp{
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .temp img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .temp .temp-show{
+        font-size: 1.5rem;
+    }
+
+    .card{
+        grid-template-columns: 1fr; /* 🔥 1 column */
+        gap: 10px;
+    }
+
+    .label, .value{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1024px){
+    .temp{
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .card{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
